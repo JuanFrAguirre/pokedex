@@ -2,6 +2,13 @@
 $black: #111;
 $gray-black: #303030;
 $gray-black-gradient: linear-gradient(180deg, #303030 15%, #202020 35%, #303030 71%);
+$gray-black-gradient2: linear-gradient(
+	141deg,
+	rgba(44, 44, 44, 1) 18%,
+	rgba(17, 17, 17, 1) 39%,
+	rgba(48, 48, 48, 1) 65%,
+	rgba(44, 44, 44, 1) 85%
+);
 $gray: #a4a4a4;
 $pokedex-red-gradient1: linear-gradient(
 	90deg,
@@ -22,6 +29,7 @@ $pokedex-red-gradient2: linear-gradient(
 );
 $pokedex-red: #b4152d;
 $gps-green: radial-gradient(circle, rgba(94, 153, 95, 1) 6%, rgba(84, 128, 81, 1) 52%, rgba(75, 157, 75, 1) 76%);
+$gps-green-linear: linear-gradient(90deg, rgba(94, 153, 95, 1) 6%, rgba(84, 128, 81, 1) 52%, rgba(75, 157, 75, 1) 76%);
 $glare: linear-gradient(
 	142deg,
 	rgba(238, 238, 244, 1) 0%,

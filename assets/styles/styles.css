@@ -39,6 +39,41 @@
   border-bottom: 2px solid #000;
   position: relative;
   right: -2px;
+  display: flex;
+  flex-direction: column;
+}
+.pokedex__top--left--content .black-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.pokedex__top--left--content .black-dot__wrapper {
+  height: calc(80px / 3);
+  width: 80px;
+  display: flex;
+}
+.pokedex__top--left--content .black-dot__wrapper--container {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 30%;
+}
+.pokedex__top--left--content .black-dot__wrapper1 {
+  justify-content: center;
+  align-items: flex-start;
+}
+.pokedex__top--left--content .black-dot__wrapper2 {
+  justify-content: space-between;
+  align-items: center;
+}
+.pokedex__top--left--content .black-dot__wrapper3 {
+  justify-content: center;
+  align-items: flex-end;
 }
 .pokedex__top--center {
   border-radius: 25px;
@@ -56,6 +91,31 @@
   position: relative;
   left: 20%;
 }
+.pokedex__center--dot {
+  width: 10px;
+  height: 50%;
+  background-color: #111;
+  border-radius: 3px;
+}
+.pokedex__center--dotWrapper {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.pokedex__center .glare {
+  width: 100%;
+  height: 100%;
+  border-radius: 7.5px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(252, 255, 255, 0.3771709367) 50%, rgba(248, 255, 255, 0) 100%);
+  opacity: 0.5;
+}
 .pokedex__bottom {
   flex-basis: 45%;
 }
@@ -65,6 +125,8 @@
   border-bottom-left-radius: 250px;
   border: 2px solid #000;
   border-right: 0;
+  display: flex;
+  position: relative;
 }
 .pokedex__bottom--center {
   border-bottom-right-radius: 20px;
@@ -118,7 +180,7 @@
   width: 15.5px;
   height: 15px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #111;
   align-self: center;
 }
 .pokedex__top .center-card__black-square .black-dot__container {
@@ -158,7 +220,7 @@
   border-radius: 50%;
   background-color: #fff;
   align-self: center;
-  box-shadow: 0 0 0 1.5px #000;
+  box-shadow: 0 0 0 1.5px #111;
 }
 .center-card__screen {
   width: 95%;
@@ -197,7 +259,7 @@
   height: 100px;
   border-radius: 50%;
   background: radial-gradient(circle, #5e995f 6%, #548051 52%, #4b9d4b 76%);
-  border: 15px solid #000;
+  border: 15px solid #111;
 }
 .gps__outer {
   position: relative;
@@ -229,13 +291,80 @@
   justify-content: center;
 }
 .gps--little-dot {
-  background-color: #000;
+  background-color: #111;
   height: 25px;
   width: 25px;
   position: absolute;
   top: 15%;
   right: 12%;
   border-radius: 50%;
+}
+
+.cross {
+  width: 65%;
+  height: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.cross__outer {
+  position: absolute;
+  align-self: center;
+  left: 20%;
+  background: linear-gradient(141deg, #2c2c2c 18%, #111111 39%, #303030 65%, #2c2c2c 85%);
+  width: 240px;
+  height: 80%;
+  border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cross__inner {
+  background: linear-gradient(180deg, #303030 15%, #202020 35%, #303030 71%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #000;
+  height: 180px;
+  width: 180px;
+  position: relative;
+  left: 5%;
+}
+.cross--square {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+}
+.cross--square2, .cross--square4, .cross--square5, .cross--square6, .cross--square8 {
+  background-color: #a4a4a4;
+}
+.cross--square2, .cross--square7, .cross--square9 {
+  border-top: 2px solid #000;
+}
+.cross--square1, .cross--square6, .cross--square7 {
+  border-right: 2px solid #000;
+}
+.cross--square1, .cross--square3, .cross--square8 {
+  border-bottom: 2px solid #000;
+}
+.cross--square3, .cross--square4, .cross--square9 {
+  border-left: 2px solid #000;
+}
+
+.green-square {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  left: -1px;
+  border: 2px solid #000;
+  border-left: 0;
+  align-self: center;
+  background: linear-gradient(90deg, #5e995f 6%, #548051 52%, #4b9d4b 76%);
 }
 
 * {
