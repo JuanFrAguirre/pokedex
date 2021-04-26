@@ -166,7 +166,7 @@
 .center-card__black-square {
   width: 85%;
   height: 80%;
-  background: linear-gradient(180deg, #303030 15%, #202020 35%, #303030 71%);
+  background: linear-gradient(141deg, #2c2c2c 18%, #111111 39%, #303030 65%, #2c2c2c 85%);
   position: absolute;
   border: 2px solid #000;
 }
