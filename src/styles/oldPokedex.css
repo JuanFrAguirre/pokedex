@@ -1,0 +1,479 @@
+.pokedex {
+  height: 80rem;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pokedex > div {
+  display: flex;
+}
+.pokedex__top,
+.pokedex__bottom {
+  flex-basis: 45%;
+}
+.pokedex__top--left,
+.pokedex__bottom--left {
+  flex-basis: 20%;
+}
+.pokedex__top--center,
+.pokedex__bottom--center {
+  flex-basis: 55%;
+  background: linear-gradient(
+    90deg,
+    rgb(176, 9, 38) 0%,
+    rgb(221, 19, 50) 17%,
+    rgb(209, 72, 65) 23%,
+    rgb(218, 18, 49) 37%,
+    rgb(220, 10, 45) 55%,
+    rgb(209, 72, 65) 59%,
+    rgb(173, 9, 37) 96%
+  );
+}
+.pokedex__top--right,
+.pokedex__bottom--right {
+  flex-basis: 25%;
+}
+.pokedex__top--left {
+  height: 60%;
+  align-self: center;
+  display: flex;
+}
+.pokedex__top--left--spacer {
+  flex-basis: 40%;
+}
+.pokedex__top--left--content {
+  flex-basis: 60%;
+  background: linear-gradient(
+    270deg,
+    rgb(180, 21, 45) 1%,
+    rgb(180, 21, 45) 11%,
+    rgb(173, 9, 37) 56%,
+    rgb(209, 72, 65) 90%
+  );
+  border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #b4152d;
+  border-bottom: 2px solid #000;
+  position: relative;
+  right: -2px;
+  display: flex;
+  flex-direction: column;
+}
+.pokedex__top--left--content .black-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.pokedex__top--left--content .black-dot__wrapper {
+  height: 26.6666666667px;
+  width: 80px;
+  display: flex;
+}
+.pokedex__top--left--content .black-dot__wrapper--container {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 30%;
+}
+.pokedex__top--left--content .black-dot__wrapper1 {
+  justify-content: center;
+  align-items: flex-start;
+}
+.pokedex__top--left--content .black-dot__wrapper2 {
+  justify-content: space-between;
+  align-items: center;
+}
+.pokedex__top--left--content .black-dot__wrapper3 {
+  justify-content: center;
+  align-items: flex-end;
+}
+.pokedex__top--center {
+  border-radius: 25px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+  border: 2px solid #000;
+}
+.pokedex__center {
+  background: linear-gradient(
+    90deg,
+    rgb(176, 9, 38) 0%,
+    rgb(221, 19, 50) 17%,
+    rgb(209, 72, 65) 23%,
+    rgb(218, 18, 49) 37%,
+    rgb(220, 10, 45) 55%,
+    rgb(209, 72, 65) 59%,
+    rgb(173, 9, 37) 96%
+  );
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-radius: 7.5px;
+  flex-basis: 5%;
+  width: 55rem;
+  position: relative;
+  left: 20%;
+}
+.pokedex__center--dot {
+  width: 10px;
+  height: 50%;
+  background-color: #111;
+  border-radius: 3px;
+}
+.pokedex__center--dotWrapper {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.pokedex__center .glare {
+  width: 100%;
+  height: 100%;
+  border-radius: 7.5px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(252, 255, 255, 0.3771709367) 50%,
+    rgba(248, 255, 255, 0) 100%
+  );
+  opacity: 0.5;
+}
+.pokedex__bottom {
+  flex-basis: 45%;
+}
+.pokedex__bottom--left {
+  background: linear-gradient(
+    141deg,
+    rgb(44, 44, 44) 18%,
+    rgb(17, 17, 17) 39%,
+    rgb(48, 48, 48) 65%,
+    rgb(44, 44, 44) 85%
+  );
+  border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+  border: 2px solid #000;
+  border-right: 0;
+  display: flex;
+  position: relative;
+}
+.pokedex__bottom--center {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 7.5px;
+  border: 2px solid #000;
+}
+.pokedex__bottom--right {
+  display: flex;
+  align-items: center;
+}
+.pokedex__bottom--right .spacer {
+  flex-basis: 20%;
+  height: 60%;
+}
+.pokedex__bottom--right .gps__outer--container {
+  height: 60%;
+  background: linear-gradient(
+    141deg,
+    rgb(44, 44, 44) 8%,
+    rgb(17, 17, 17) 29%,
+    rgb(48, 48, 48) 75%,
+    rgb(44, 44, 44) 95%
+  );
+  align-self: center;
+  border-top-right-radius: 250px;
+  border-bottom-right-radius: 250px;
+  border: 2px solid #000;
+  border-left: 0.1px;
+  display: flex;
+  flex-basis: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.center-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.center-card__black-square {
+  width: 85%;
+  height: 80%;
+  background: linear-gradient(
+    141deg,
+    rgb(44, 44, 44) 18%,
+    rgb(17, 17, 17) 39%,
+    rgb(48, 48, 48) 65%,
+    rgb(44, 44, 44) 85%
+  );
+  position: absolute;
+  border: 2px solid #000;
+}
+.pokedex__top .center-card__black-square {
+  border-radius: 10px;
+  border-top-right-radius: 25px;
+}
+.pokedex__top .center-card__black-square .black-dot {
+  position: absolute;
+  right: 2.5%;
+  width: 15.5px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #111;
+  align-self: center;
+}
+.pokedex__top .center-card__black-square .black-dot__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.pokedex__bottom .center-card__black-square {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 25px;
+  width: 92.5%;
+  left: 0;
+  border-left: 0;
+}
+.pokedex__bottom .center-card__black-square .white-dots {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 60%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
+.pokedex__bottom .center-card__black-square .white-dots__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.pokedex__bottom .center-card__black-square .white-dots--dot {
+  width: 15.5px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-self: center;
+  box-shadow: 0 0 0 1.5px #111;
+}
+.center-card__screen {
+  width: 95%;
+  height: 95%;
+  border: 2px solid #000;
+  border-radius: 7.5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+.center-card__screen--border {
+  z-index: 99;
+  width: 70%;
+  height: 85%;
+  background-color: #a4a4a4;
+  border: 2px solid #000;
+  border-radius: 7.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-card__screen--glare {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    125deg,
+    rgb(238, 238, 244, 0.6) 0%,
+    rgba(243, 243, 247, 0.2) 19%,
+    rgba(245, 245, 249, 0.6) 46%,
+    rgba(243, 243, 247, 0.3) 66%,
+    rgba(246, 246, 249, 0.2) 77%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  border-radius: 7.5px;
+  pointer-events: none;
+  opacity: 0.4;
+}
+.gps {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgb(94, 153, 95) 6%,
+    rgb(84, 128, 81) 52%,
+    rgb(75, 157, 75) 76%
+  );
+  border: 15px solid #111;
+}
+.gps__outer {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  background-color: #a4a4a4;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gps__outer .glare {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    142deg,
+    rgb(238, 238, 244) 0%,
+    rgba(243, 243, 247, 0) 19%,
+    rgba(245, 245, 249, 0.7497199563) 46%,
+    rgba(243, 243, 247, 0.3519608527) 66%,
+    rgba(246, 246, 249, 0.2959384437) 77%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 999;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.35;
+}
+.gps__inner {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gps--little-dot {
+  background-color: #111;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 15%;
+  right: 12%;
+  border-radius: 50%;
+}
+.cross {
+  width: 65%;
+  height: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.cross__outer {
+  position: absolute;
+  align-self: center;
+  left: 20%;
+  background: linear-gradient(
+    141deg,
+    rgb(44, 44, 44) 18%,
+    rgb(17, 17, 17) 39%,
+    rgb(48, 48, 48) 65%,
+    rgb(44, 44, 44) 85%
+  );
+  width: 240px;
+  height: 80%;
+  border-top-left-radius: 250px;
+  border-bottom-left-radius: 250px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cross__inner {
+  background: linear-gradient(180deg, #303030 15%, #202020 35%, #303030 71%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #000;
+  height: 180px;
+  width: 180px;
+  position: relative;
+  left: 5%;
+}
+.cross--square {
+  width: 33.3333333333%;
+  height: 33.3333333333%;
+}
+.cross--square2,
+.cross--square4,
+.cross--square5,
+.cross--square6,
+.cross--square8 {
+  background-color: #a4a4a4;
+}
+.cross--square2,
+.cross--square7,
+.cross--square9 {
+  border-top: 2px solid #000;
+}
+.cross--square1,
+.cross--square6,
+.cross--square7 {
+  border-right: 2px solid #000;
+}
+.cross--square1,
+.cross--square3,
+.cross--square8 {
+  border-bottom: 2px solid #000;
+}
+.cross--square3,
+.cross--square4,
+.cross--square9 {
+  border-left: 2px solid #000;
+}
+.green-square {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  left: -1px;
+  border: 2px solid #000;
+  border-left: 0;
+  align-self: center;
+  background: linear-gradient(
+    90deg,
+    rgb(94, 153, 95) 6%,
+    rgb(84, 128, 81) 52%,
+    rgb(75, 157, 75) 76%
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #add8e6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
