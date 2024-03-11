@@ -1,1 +1,1 @@
-Just for fun. A pokedex done solely with CSS (SASS) and later on updated to be a functioning pokedex with React and Typescript
+Just for fun. A pokedex done solely with CSS (SASS) and later on updated to be a functioning pokedex with React and Typescript. Not responsive due to constraints during the initial development, only correctly seen on a Desktop Web Browser
